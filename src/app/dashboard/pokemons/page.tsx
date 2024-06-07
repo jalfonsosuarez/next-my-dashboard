@@ -1,5 +1,6 @@
 
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
+import { FavouritePokemons } from "../../../pokemons/components/FavouritePokemons";
 
 
 export const metadata = {
@@ -23,7 +24,7 @@ const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => 
 }
 
 
-export default async function PokemonPage() {
+export default async function PokemonsPage() {
 
   const pokemons = await getPokemons(151);
 
